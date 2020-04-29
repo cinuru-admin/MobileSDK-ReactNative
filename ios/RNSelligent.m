@@ -279,6 +279,10 @@ RCT_EXPORT_METHOD(subscribeToEvents) {
     return dispatch_get_main_queue();
 }
 
++ (BOOL)requiresMainQueueSetup {
+    return YES;
+}
+
 #pragma mark - Dealloc
 
 - (void)dealloc {
