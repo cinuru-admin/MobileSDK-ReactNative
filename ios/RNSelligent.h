@@ -11,6 +11,7 @@
 @interface RNSelligent : RCTEventEmitter <RCTBridgeModule>
 
 + (void)configureWithLaunchOptions:(NSDictionary *)launchOptions;
++ (void)setDebug:(BOOL)enables;
 + (void)performIAMFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 + (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken;
 + (void)didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings;

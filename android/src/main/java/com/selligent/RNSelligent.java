@@ -160,7 +160,7 @@ public class RNSelligent extends ReactContextBaseJavaModule implements Lifecycle
     }
 
     @ReactMethod
-    public void setDebug(Boolean enable) {
+    public static void setDebug(Boolean enable) {
         SMManager.DEBUG = enable;
     }
 

@@ -62,6 +62,10 @@ RCT_EXPORT_MODULE(RNSelligent)
     }
 }
 
++ (void)setDebug:(BOOL)enables {
+    [[SMManager sharedInstance] applyLogLevel:kSMLogLevel_All];
+}
+
 + (void)performIAMFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
     [[SMManager sharedInstance] performIAMFetchWithCompletionHandler:completionHandler];
 }

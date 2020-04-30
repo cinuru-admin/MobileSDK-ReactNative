@@ -122,6 +122,7 @@ This module provides an API for the usage of the Selligent SDK in React Native.
            super.onCreate();
            ...
            // Add the following:
+           // to enable logs during debugging (don't do this in production!) add: RNSelligent.setDebug(true);
            RNSelligent.configure(this);
        }
    }
@@ -191,6 +192,7 @@ Add the following properties to the `selligent.json` file:
 
    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      [self _prepareForPushNotifications];
+     // to enable logs during debugging (don't do this in production!) add: [RNSelligent setDebug:true];
      [RNSelligent configureWithLaunchOptions:launchOptions];
      // ...
      //react native setup code
