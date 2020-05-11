@@ -86,7 +86,7 @@ This module provides an API for the usage of the Selligent SDK in React Native.
    ```groovy
    dependencies {
        // Add the following:
-       compile project(path: ':selligent-react-native')
+       implementation project(path: ':selligent-react-native')
        ...
    }
    ...
